@@ -1,0 +1,5 @@
+# All element symbols must be written correctly (e.g., copper is Cu, not CU or cu) 
+# Reactants and products must be separated by +, and sides separated by = 
+# Have fun learning chemistry with this simple app! 
+sympy==1.14.0rc2
+periodictable==2.0.2
