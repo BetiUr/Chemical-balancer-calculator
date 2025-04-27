@@ -65,15 +65,19 @@ This project was containerized using Docker.
 
 To build and run the Docker container these steps were done:
 1. The working directory of my project was set
-   cd C:/Users/Beatrice/PycharmProjects/PythonProject2/.venv
 
-2. The Docker image was built:
-    docker build -t reaction_balancer_calculator .
+       cd C:/Users/Beatrice/PycharmProjects/PythonProject2/.venv
 
-3. Run the container interactively:
-    docker run -it reaction_balancer_calculator
+3. The Docker image was built:
+
+       docker build -t reaction_balancer_calculator .
+
+4. Run the container interactively:
+
+        docker run -it reaction_balancer_calculator
    
-4. Expected output
+5. Expected output
+   
    🔬 Welcome to the Chemical Reaction Balancer and Molar Mass Calculator!
 Enter a chemical reaction (e.g., H2 + O2 = H2O):
 
@@ -99,6 +103,7 @@ Docker Hub Details
 - The Docker image for this project has been pushed to Docker Hub.
 
 Docker Image Tag:
+
     betiur/reaction_balancer_calculator:v1.0
 
 You can pull and run the image using the following command:
