@@ -23,7 +23,7 @@ Requirements:
 Installation:
 
 1. Clone the repository:
-    git clone https://github.com/yourusername/chemical-reaction-balancer.git
+    git clone https://github.com/BetiUr/Chemical-balancer-calculator.git
     cd chemical-reaction-balancer
 
 2. Create a virtual environment and activate it:
@@ -63,15 +63,48 @@ Dockerization
 
 This project was containerized using Docker.
 
-To build and run the Docker container:
+To build and run the Docker container these steps were done:
+1. The working directory of my project was set
+   cd C:/Users/Beatrice/PycharmProjects/PythonProject2/.venv
 
-1. Build the Docker image:
+2. The Docker image was built:
     docker build -t reaction_balancer_calculator .
 
-2. Run the container interactively:
+3. Run the container interactively:
     docker run -it reaction_balancer_calculator
+   
+4. Expected output
+   🔬 Welcome to the Chemical Reaction Balancer and Molar Mass Calculator!
+Enter a chemical reaction (e.g., H2 + O2 = H2O):
 
-Use `-it` because the program requires user input.
+If the reaction given in the example is used, the expected output is:
+
+✅ Balanced Reaction:
+2 H2 + 1 O2 = 2 H2O
+
+📦 Molar Masses:
+H2: 2.016 g/mol (coefficient: 2)
+O2: 31.998 g/mol (coefficient: 1)
+H2O: 18.015 g/mol (coefficient: 2)
+
+Some examples for trying out the calculator:
+- C3H8+O2=CO2+H2O
+- N2O5=NO2+O2
+- CaCl2+AgNO3=AgCl+Ca(NO3)2
+
+---
+
+Docker Hub Details
+
+- The Docker image for this project has been pushed to Docker Hub.
+
+Docker Image Tag:
+    betiur/reaction_balancer_calculator:v1.0
+
+You can pull and run the image using the following command:
+
+    docker pull betiur/reaction_balancer_calculator:v1.0
+    docker run -it betiur/reaction_balancer_calculator:v1.0
 
 ---
 
